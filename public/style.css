@@ -1,0 +1,120 @@
+/* This is your main Sass file. */
+/* CUSTOM FONTS 
+
+This is where we'll import a custom font from Google, then set them as variable to make it easier to call throughout other files.
+*/
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700&display=swap");
+/* COLOR SCHEME
+
+Is an example of how to set variables.
+
+Setting your color scheme as variables makes it easier to update all color references if there are design changes in the future. No more find + replace!
+
+*/
+/* PARTIALS 
+
+Partials are a great way to organize your code into smaller bit. 
+Keep in mind that partials follow the standard CSS cascade, first to last. 
+You'll see that we're loading reset first
+
+*/
+/*  Reset styles */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  margin: 0;
+  font-size: 16px; }
+
+* {
+  box-sizing: border-box; }
+
+address, article, aside, blockquote, canvas, dd, div, dl, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, li, main, nav, noscript, ol, output, p, pre, section, table, tfoot, ul, video {
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+a {
+  color: inherit; }
+
+img {
+  height: auto;
+  border: 0; }
+
+cite {
+  font-style: normal; }
+
+dl {
+  list-style-type: none; }
+
+button, input, meter, optgroup, progress, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #f0fcfd;
+  color: #130f40; }
+
+/* This is the file where you'll keep all of the styles for creating layouts and spacing */
+body {
+  padding: 2rem; }
+
+.container {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto; }
+
+/* This is the file where you'll keep all of the styles for changing the fonts */
+/* 
+
+Here's an example of a mixin. A mixin is like a variable for many several styles. Here we want both the h1 and h2 to be bold and serif. 
+
+This is an alternative to doing this: h1, h2 {}
+
+https://sass-lang.com/documentation/at-rules/mixin
+
+*/
+h1 {
+  font-weight: bold;
+  font-family: "Noto Serif", serif;
+  color: #e056fd;
+  font-size: 2.5rem;
+  margin-bottom: 1rem; }
+
+h2 {
+  font-weight: bold;
+  font-family: "Noto Serif", serif;
+  color: #22a6b3;
+  font-size: 1.5rem;
+  margin-bottom: .75rem; }
+
+p {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  font-family: "Noto Sans", sans-serif; }
+
+ul, ol {
+  font-family: "Noto Sans", sans-serif;
+  padding-left: 1rem; }
+
+li {
+  margin-bottom: .5rem; }
