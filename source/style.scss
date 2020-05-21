@@ -1,0 +1,43 @@
+/* This is your main Sass file. */ 
+
+/* CUSTOM FONTS 
+
+This is where we'll import a custom font from Google, then set them as variable to make it easier to call throughout other files.
+*/ 
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700&display=swap');
+
+$font-serif: 'Noto Serif', serif;
+$font-sans: 'Noto Sans', sans-serif;
+
+/* COLOR SCHEME
+
+Is an example of how to set variables.
+
+Setting your color scheme as variables makes it easier to update all color references if there are design changes in the future. No more find + replace!
+
+*/ 
+
+$neutral-light: #f0fcfd;
+$neutral-medium:#95afc0;
+$neutral-dark: #130f40;
+$accent-warm: #e056fd;
+$accent-cool: #22a6b3;
+
+/* PARTIALS 
+
+Partials are a great way to organize your code into smaller bit. 
+Keep in mind that partials follow the standard CSS cascade, first to last. 
+You'll see that we're loading reset first
+
+*/
+
+@import "reset"; 
+@import "global"; 
+@import "layout"; 
+@import "typography";  
+@import "lists";  
+
+
+
+
+

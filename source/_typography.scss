@@ -1,0 +1,36 @@
+/* This is the file where you'll keep all of the styles for changing the fonts */ 
+
+/* 
+
+Here's an example of a mixin. A mixin is like a variable for many several styles. Here we want both the h1 and h2 to be bold and serif. 
+
+This is an alternative to doing this: h1, h2 {}
+
+https://sass-lang.com/documentation/at-rules/mixin
+
+*/ 
+
+@mixin bold-headers {
+  font-weight: bold;
+  font-family: $font-serif;
+}
+
+h1 {
+  @include bold-headers;
+  color: $accent-warm;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  @include bold-headers;
+  color: $accent-cool;
+  font-size: 1.5rem;
+  margin-bottom: .75rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  font-family: $font-sans;
+}
